@@ -35,7 +35,7 @@ describe('arrayShuffler', () => {
         expect(arrayShuffler(colors2)).toEqual(expect.arrayContaining(["saffron", "aquamarine", "periwinkle", "indigo", "ochre"]))
     })
   })
-  
+
 
 // b) Create the function that makes the test pass.
 // Create a function that takes in an array, removes the first item from the array and shuffles the remaining content.
@@ -51,8 +51,8 @@ describe('arrayShuffler', () => {
 const colors1 = ["purple", "blue", "green", "yellow", "pink"]
 const colors2 = ["chartreuse", "indigo", "periwinkle", "ochre", "aquamarine", "saffron"]
 
- let arrayShuffler = array  => { 
-        array.shift() 
+ let arrayShuffler = array  => {
+        array.shift()
             for (i=0; i < array.length; i++){
             let random = Math.floor(Math.random() * array.length)
             return array
@@ -77,7 +77,7 @@ describe("miniMax", () => {
       expect(miniMax(nums2)).toEqual(expect.arrayContaining[5, 109])
     })
   })
-// *********
+// ************
 // ● miniMax › takes an array of numbers and returns an array of the minimum and maximum numbers in that order
 
 // ReferenceError: miniMax is not defined
@@ -110,12 +110,12 @@ describe("miniMax", () => {
 var miniMax = (array) => {
     return [Math.min(...array), Math.max(...array)];
   };
-  
+
 
   const nums1 = [3, 56, 90, -8, 0, 23, 6]
   const nums2 = [109, 5, 9, 67, 8, 24]
-  console.log(miniMax(nums1)) 
-  console.log(miniMax(nums2)) 
+  console.log(miniMax(nums1))
+  console.log(miniMax(nums2))
 
 
 
