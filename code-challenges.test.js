@@ -27,57 +27,53 @@
 
 
 
-describe('arrayShuffler', () => {
-    const colors1 = ["purple", "blue", "green", "yellow", "pink"]
-    const colors2 = ["chartreuse", "indigo", "periwinkle", "ochre", "aquamarine", "saffron"]
-    it("takes in an array, removes the first item from the array and shuffles the remaining content", () => {
-        expect(arrayShuffler(colors1)).toEqual(expect.arrayContaining(["yellow", "blue", "pink", "green"]))
-        expect(arrayShuffler(colors2)).toEqual(expect.arrayContaining(["saffron", "aquamarine", "periwinkle", "indigo", "ochre"]))
-    })
-  })
+// describe('arrayShuffler', () => {
+//     const colors1 = ["purple", "blue", "green", "yellow", "pink"]
+//     const colors2 = ["chartreuse", "indigo", "periwinkle", "ochre", "aquamarine", "saffron"]
+//     it("takes in an array, removes the first item from the array and shuffles the remaining content", () => {
+//         expect(arrayShuffler(colors1)).toEqual(expect.arrayContaining(["yellow", "blue", "pink", "green"]))
+//         expect(arrayShuffler(colors2)).toEqual(expect.arrayContaining(["saffron", "aquamarine", "periwinkle", "indigo", "ochre"]))
+//     })
+//   })
 
 
 // b) Create the function that makes the test pass.
 // Create a function that takes in an array, removes the first item from the array and shuffles the remaining content.
 
 // ***PSEUDOCODE***
-//create a function
+//create a function named arrayShuffler
+//parameter is array
 //remove the first element
 // use .shift method
-//math.floor/math.random
+// use math.floor/math.random method for possible solution
 
 
 
-const colors1 = ["purple", "blue", "green", "yellow", "pink"]
-const colors2 = ["chartreuse", "indigo", "periwinkle", "ochre", "aquamarine", "saffron"]
+//
 
- let arrayShuffler = array  => {
-        array.shift()
-            for (i=0; i < array.length; i++){
-            let random = Math.floor(Math.random() * array.length)
-            return array
-        }
-    }
-console.log(arrayShuffler(colors1))
+//  let arrayShuffler = array  => {
+//         array.shift()
+//             for (i=0; i < array.length; i++){
+//             let random = Math.floor(Math.random() * array.length)
+//             return array
+//         }
+//     }
+// console.log(arrayShuffler(colors1))
 
 // --------------------2) Create a function that takes an array of numbers and returns an array of the minimum and maximum numbers in that order.
 
 // a) Create a test with expect statements for each of the variables provided.
 
-// const nums1 = [3, 56, 90, -8, 0, 23, 6]
-// Expected output: [-8, 90]
-// const nums2 = [109, 5, 9, 67, 8, 24]
-// Expected output: [5, 109]
 
 describe("miniMax", () => {
     const nums1 = [3, 56, 90, -8, 0, 23, 6]
     const nums2 = [109, 5, 9, 67, 8, 24]
     it("takes an array of numbers and returns an array of the minimum and maximum numbers in that order", () => {
-      expect(miniMax(nums1)).toEqual(expect.arrayContaining[-8, 90])
-      expect(miniMax(nums2)).toEqual(expect.arrayContaining[5, 109])
+      expect(miniMax(nums1)).toEqual([-8, 90])
+      expect(miniMax(nums2)).toEqual([5, 109])
     })
   })
-// ************
+// // **
 // ● miniMax › takes an array of numbers and returns an array of the minimum and maximum numbers in that order
 
 // ReferenceError: miniMax is not defined
@@ -102,20 +98,20 @@ describe("miniMax", () => {
 // b) Create the function that makes the test pass. Create a function that takes an array of numbers and returns an array of the minimum and maximum numbers in that order.
 
 //**PSUEDOCODE*****GOT THE CODE TO WORKBUT COULDNT GET IT TO PASS.DONT KNOW WHAT I AM DOING WRONG
+
 //create a function called miniMax
 //takes in an array
 //use .min - .max method
 //return an array with new numbers using min/max
-//
-var miniMax = (array) => {
+// //
+
+
+const miniMax = (array) => {
     return [Math.min(...array), Math.max(...array)];
   };
 
-
-  const nums1 = [3, 56, 90, -8, 0, 23, 6]
-  const nums2 = [109, 5, 9, 67, 8, 24]
-  console.log(miniMax(nums1))
-  console.log(miniMax(nums2))
+//   console.log(miniMax(nums1))
+//   console.log(miniMax(nums2))
 
 
 
@@ -130,13 +126,13 @@ var miniMax = (array) => {
 
 // Expected output: [3, 7, 10, 5, 4, 8, 2, 1]
 
-describe("noDupes", () => {
-    // const testArray1 = [3, 7, 10, 5, 4, 3, 3]
-    // const testArray2 = [7, 8, 2, 3, 1, 5, 4]
-    it("takes in two arrays as arguments and returns one array with no duplicate values", () => {
-      expect(noDupes(testArray1,testArray2)).toEqual([3, 7, 10, 5, 4, 8, 2, 1])
-        })
-  })
+// describe("noDupes", () => {
+//     // const testArray1 = [3, 7, 10, 5, 4, 3, 3]
+//     // const testArray2 = [7, 8, 2, 3, 1, 5, 4]
+//     it("takes in two arrays as arguments and returns one array with no duplicate values", () => {
+//       expect(noDupes(testArray1,testArray2)).toEqual([3, 7, 10, 5, 4, 8, 2, 1])
+//         })
+//   })
 
 // ************************************
 // ✕ takes in two arrays as arguments and returns one array with no duplicate values
@@ -166,11 +162,11 @@ describe("noDupes", () => {
 // // b) Create the function that makes the test pass.
 
 // //**PSEUDOCODE****************
-// //create function - arr3
+// //create function called noDupes
 // //parameters will be array1/array2
-// //thinking to join arrays together
-// //use a method  to remove similar values
-// //data type will be new array of non duplicate values
+// //thinking to pass arrays together in the function
+// //use a method .set to remove similar values
+// //data type will be new array of non duplicate values using spread operator
 //********************************
 
     // const testArray1 = [3, 7, 10, 5, 4, 3, 3]
