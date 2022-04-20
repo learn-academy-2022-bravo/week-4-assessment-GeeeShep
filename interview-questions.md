@@ -18,7 +18,8 @@ Then, research the question to expand on your answer. Even if you feel you have 
 
   Your answer: Document Object Model lets programming languages access and interact with a webpage
 
-  Researched answer: The Document Object Model is a programming interface for HTML, XML, or other textual content. It allows you to read, navigate, and modify the abstract tree structure of such content. 
+  Researched answer: The Document Object Model is a programming interface. It can allow things to happen based on user interaction or something done by the browser.
+  
 
 
 
@@ -34,7 +35,8 @@ Then, research the question to expand on your answer. Even if you feel you have 
 
   Your answer: a float gives a decimal value whereas an integer gives a single digit
 
-  Researched answer: In a real world application, you are more likely to use the float data type in your database as opposed to integers because you can get more accurate values. A decimal gives a more accurate value, even though it is likely to take up more space in your database wheres the integer gives a rounded value. 
+  Researched answer: In a real world application, you are more likely to use the float data type in your database as opposed to integers because you can get more accurate values. A float decimal gives a more accurate value, even though it is likely to take up more space in your database wheres the integer gives a rounded value. 
+
 
 
 
@@ -42,13 +44,13 @@ Then, research the question to expand on your answer. Even if you feel you have 
 
   Your answer: the last line of method to be returned
 
-  Researched answer:I mplicit return when return isn’t explicitly called within a method then Ruby returns the value of the last executed instruction in the method. 
+  Researched answer:Implicit return is when return isn’t explicitly called within a method then Ruby returns the output  of the last executed instruction in the method. 
 
 
 
 ## Looking Ahead: Terms for Next Week
 
-1. Instance Variable: Instance variables begin with an at sign (@) and can be referenced only within class methods. They store dat,basically they know things
+1. Instance Variable: Instance variables begin with an at sign (@) and can be referenced only within class methods. They store dat,basically they know things. Variable that belongs to a class.
 
 2. PostgreSQL: POSTINGRES Structered Query Language is an open source relational database management system ( DBMS ) developed by a worldwide team of volunteers
 
