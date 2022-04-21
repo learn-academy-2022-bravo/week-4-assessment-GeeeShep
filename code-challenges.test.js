@@ -48,7 +48,7 @@ describe('arrayShuffler', () => {
 // using .shift method removes first element in the array
 //use a "for loop" to get the value of the array 
 // use math.floor/math.random method for a solution as that will shuffle 
-//the array to get a new array output
+//the shifted array to get a new array output
 //
 
 
