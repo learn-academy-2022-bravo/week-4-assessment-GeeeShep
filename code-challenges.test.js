@@ -46,6 +46,7 @@ describe('arrayShuffler', () => {
 //remove the first element and shuffle the rest
 //originally tried to use .slice method but couldnt figure out the syntax
 // using .shift method removes first element in the array
+//use a "for loop" to get the value of the array 
 // use math.floor/math.random method for possible solution as that will shuffle 
 //the new array output
 //
