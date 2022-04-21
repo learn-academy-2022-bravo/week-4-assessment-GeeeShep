@@ -27,14 +27,14 @@
 
 
 
-// describe('arrayShuffler', () => {
-//     const colors1 = ["purple", "blue", "green", "yellow", "pink"]
-//     const colors2 = ["chartreuse", "indigo", "periwinkle", "ochre", "aquamarine", "saffron"]
-//     it("takes in an array, removes the first item from the array and shuffles the remaining content", () => {
-//         expect(arrayShuffler(colors1)).toEqual(expect.arrayContaining(["yellow", "blue", "pink", "green"]))
-//         expect(arrayShuffler(colors2)).toEqual(expect.arrayContaining(["saffron", "aquamarine", "periwinkle", "indigo", "ochre"]))
-//     })
-//   })
+describe('arrayShuffler', () => {
+    const colors1 = ["purple", "blue", "green", "yellow", "pink"]
+    const colors2 = ["chartreuse", "indigo", "periwinkle", "ochre", "aquamarine", "saffron"]
+    it("takes in an array, removes the first item from the array and shuffles the remaining content", () => {
+        expect(arrayShuffler(colors1)).toEqual(expect.arrayContaining(["yellow", "blue", "pink", "green"]))
+        expect(arrayShuffler(colors2)).toEqual(expect.arrayContaining(["saffron", "aquamarine", "periwinkle", "indigo", "ochre"]))
+    })
+  })
 
 
 // b) Create the function that makes the test pass.
@@ -43,21 +43,26 @@
 // ***PSEUDOCODE***
 //create a function named arrayShuffler
 //parameter is array
-//remove the first element
-// use .shift method
-// use math.floor/math.random method for possible solution
-
-
-
+//remove the first element and shuffle the rest
+//originally tried to use .slice method but couldnt figure out the syntax
+// using .shift method removes first element in the array
+// use math.floor/math.random method for possible solution as that will shuffle 
+//the new array output
 //
 
-//  let arrayShuffler = array  => {
-//         array.shift()
-//             for (i=0; i < array.length; i++){
-//             let random = Math.floor(Math.random() * array.length)
-//             return array
-//         }
-//     }
+
+  let arrayShuffler = array  => {
+         array.shift()
+             for (i=0; i < array.length; i++){
+             let random = Math.floor(Math.random() * array.length)
+             let newArray = array [i]
+             array[i] = array[random]
+             array[random] = newArray
+       }
+          return array
+     }
+
+ 
 // console.log(arrayShuffler(colors1))
 
 // --------------------2) Create a function that takes an array of numbers and returns an array of the minimum and maximum numbers in that order.
@@ -65,14 +70,14 @@
 // a) Create a test with expect statements for each of the variables provided.
 
 
-describe("miniMax", () => {
-    const nums1 = [3, 56, 90, -8, 0, 23, 6]
-    const nums2 = [109, 5, 9, 67, 8, 24]
-    it("takes an array of numbers and returns an array of the minimum and maximum numbers in that order", () => {
-      expect(miniMax(nums1)).toEqual([-8, 90])
-      expect(miniMax(nums2)).toEqual([5, 109])
-    })
-  })
+// describe("miniMax", () => {
+//     const nums1 = [3, 56, 90, -8, 0, 23, 6]
+//     const nums2 = [109, 5, 9, 67, 8, 24]
+//     it("takes an array of numbers and returns an array of the minimum and maximum numbers in that order", () => {
+//       expect(miniMax(nums1)).toEqual([-8, 90])
+//       expect(miniMax(nums2)).toEqual([5, 109])
+//     })
+//   })
 // // **
 // ● miniMax › takes an array of numbers and returns an array of the minimum and maximum numbers in that order
 
@@ -97,18 +102,23 @@ describe("miniMax", () => {
 
 // b) Create the function that makes the test pass. Create a function that takes an array of numbers and returns an array of the minimum and maximum numbers in that order.
 
-//**PSUEDOCODE*****GOT THE CODE TO WORKBUT COULDNT GET IT TO PASS.DONT KNOW WHAT I AM DOING WRONG
+//**PSUEDOCODE*****
 
 //create a function called miniMax
 //takes in an array
-//use .min - .max method
+//need a way to get the minimum and maximum values in each array
+//at the same time not returning the remaining values
+//found that i can use math.min - math.max method to get those values
+//with a bit a of help found out that the spread operator will include all the elements
+//to determine the min/max elements(i believe)
 //return an array with new numbers using min/max
-// //
+// // it worked!
 
 
-const miniMax = (array) => {
-    return [Math.min(...array), Math.max(...array)];
-  };
+
+// const miniMax = (array) => {
+//     return [Math.min(...array), Math.max(...array)];
+//   };
 
 //   console.log(miniMax(nums1))
 //   console.log(miniMax(nums2))

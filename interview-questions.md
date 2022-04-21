@@ -9,7 +9,7 @@ Then, research the question to expand on your answer. Even if you feel you have 
 
   Your answer: properties, its like a way to pass info from one to another
 
-  Researched answer: Props is a special keyword in React, that stands for properties and is  used for passing data from one component to another. It is read only meaning that it cant be changed by child components and info is passed in one direction(parent to child)
+  Researched answer: Props is a special keyword in React, that stands for properties. Its  used for passing data from a component to another one. It is read only meaning that it cant be changed by child  and info is passed in one direction(parent to child)
 
 
 
@@ -44,13 +44,13 @@ Then, research the question to expand on your answer. Even if you feel you have 
 
   Your answer: the last line of method to be returned
 
-  Researched answer:Implicit return is when return isn’t explicitly called within a method then Ruby returns the output  of the last executed instruction in the method. 
+  Researched answer: Implicit return is when return isn’t explicitly called within a method then Ruby returns the output  of the last executed instruction in the method. 
 
 
 
 ## Looking Ahead: Terms for Next Week
 
-1. Instance Variable: Instance variables begin with an at sign (@) and can be referenced only within class methods. They store dat,basically they know things. Variable that belongs to a class.
+1. Instance Variable: Instance variables begin with an at sign (@) and can be referenced only within class methods. They store data, basically they know things. Variable that belongs to a class.
 
 2. PostgreSQL: POSTINGRES Structered Query Language is an open source relational database management system ( DBMS ) developed by a worldwide team of volunteers
 
