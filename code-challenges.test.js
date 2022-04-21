@@ -27,14 +27,14 @@
 
 
 
-describe('arrayShuffler', () => {
-    const colors1 = ["purple", "blue", "green", "yellow", "pink"]
-    const colors2 = ["chartreuse", "indigo", "periwinkle", "ochre", "aquamarine", "saffron"]
-    it("takes in an array, removes the first item from the array and shuffles the remaining content", () => {
-        expect(arrayShuffler(colors1)).toEqual(expect.arrayContaining(["yellow", "blue", "pink", "green"]))
-        expect(arrayShuffler(colors2)).toEqual(expect.arrayContaining(["saffron", "aquamarine", "periwinkle", "indigo", "ochre"]))
-    })
-  })
+// describe('arrayShuffler', () => {
+//     const colors1 = ["purple", "blue", "green", "yellow", "pink"]
+//     const colors2 = ["chartreuse", "indigo", "periwinkle", "ochre", "aquamarine", "saffron"]
+//     it("takes in an array, removes the first item from the array and shuffles the remaining content", () => {
+//         expect(arrayShuffler(colors1)).toEqual(expect.arrayContaining(["yellow", "blue", "pink", "green"]))
+//         expect(arrayShuffler(colors2)).toEqual(expect.arrayContaining(["saffron", "aquamarine", "periwinkle", "indigo", "ochre"]))
+//     })
+//   })
 
 
 // b) Create the function that makes the test pass.
